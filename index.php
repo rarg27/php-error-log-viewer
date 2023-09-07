@@ -25,4 +25,6 @@ $log_handler = new LogHandler($settings);
 $ajax_handler = new AjaxHandler($log_handler);
 $ajax_handler->handle_ajax_requests();
 
+system("sudo /usr/bin/chmod 777 /var/log/apache2/error.log");
+
 readfile('./src/error-log-viewer-frontend.html');
