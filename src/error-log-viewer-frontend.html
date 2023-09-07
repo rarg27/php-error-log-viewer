@@ -232,7 +232,9 @@
 
 		pre {
 			font-family: 'Roboto Mono', monospace;
-			margin: 0.2rem
+			margin: 0.2rem;
+			white-space: pre-wrap;
+			word-break: break-word;
 		}
 
 		.md-table-cell {
@@ -241,24 +243,20 @@
 		}
 
 		.cell-time {
-			min-width: 200px
+			min-width: 200px;
 		}
 
 		.md-table-fixed-header {
-			max-width: 100%
+			max-width: 100%;
 		}
 
 		.message {
 			white-space: pre;
+			max-width: 80vw;
 		}
 
 		#app .message a {
-			color: #97bfff
-		}
-
-		.md-list-item-text p {
-			white-space: normal;
-			padding-bottom: 1rem;
+			color: #97bfff;
 		}
 	</style>
 </body>
